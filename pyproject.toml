@@ -1,0 +1,19 @@
+[project]
+name = "yt-extractor"
+version = "0.1.0"
+description = "Extract all videos from a YouTube channel and export to Excel"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "yt-dlp>=2024.12.6",
+    "openpyxl>=3.1.5",
+    "certifi>=2025.11.12",
+    "pyyaml>=6.0.3",
+]
+
+[project.scripts]
+yt-extractor = "yt_extractor.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

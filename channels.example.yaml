@@ -1,0 +1,17 @@
+# YouTube Channels Configuration
+# Define channels to extract videos from
+
+channels:
+  - name: "Alex Hormozi"
+    url: "https://www.youtube.com/@AlexHormozi"
+    enabled: true
+
+  # Add more channels as needed
+  # - name: "Another Channel"
+  #   url: "https://www.youtube.com/@ChannelName"
+  #   enabled: true
+
+# Output settings
+output:
+  directory: "outputs" # Output directory for Excel files (default: outputs directory)
+  filename_format: "{channel_name}_{date}.xlsx" # Filename format (supports {channel_name} and {date})
